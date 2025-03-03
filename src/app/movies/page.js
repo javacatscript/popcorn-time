@@ -1,9 +1,10 @@
+'use client';
+
 import React from "react";
-import { fetchTrendingMovies } from "@/lib/tmdb";
+import { fetchTrendingMovies } from "../../../lib/tmdb";
 
 const MoviesPage = async () => {
   const data = await fetchTrendingMovies();
-  console.log(data);
 
   return (
     <div>
